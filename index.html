@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Посты</h1>
+			<input type="text" class="search-input" placeholder="Поиск постов..." />
+			<div class="sort-buttons">
+				<button class="sort-abc">сортировка по алфавиту</button>
+				<button class="sort-likes">Сортировка по лайкам</button>
+				<button class="sort-views">Сортировка по просмотрам</button>
+			</div>
+			<div class="filter-button">
+				<button class="filter-likes">
+					Показать посты с лайками> дизлайками
+				</button>
+
+				<button class="filter-views">Позать посты с просмотрами>1000</button>
+				<button class="filter-dislikes">
+					Показать посты с дизлайками>лайками
+				</button>
+			</div>
+
+			<div class="posts"></div>
+			<h2>Теги</h2>
+			<div class="tags"></div>
+		</div>
+
+		<template class="post-template">
+			<div class="post">
+				<h2 class="post-title"></h2>
+				<p class="post-text"></p>
+				<div class="post-info">
+					<span class="likes"></span>
+					<span class="dislikes"></span>
+					<span class="views"></span>
+				</div>
+			</div>
+		</template>
+		<template class="tag-template">
+			<div class="tag">
+				<span class="tag-name"></span>
+			</div>
+		</template>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
